@@ -1,19 +1,46 @@
 import XCTest
 @testable import Lesson6
 
-final class DeatailTests: XCTestCase {
+final class DetailTests: XCTestCase {
+    
+    func testViewAssembly() {
+        let controller = DetailAssembly.assemble(artistId: 0)
+        XCTAssert(controller is DetailViewController)
 
-  func testDetailAssembly() {
-    let sut = DetailAssembly.assemble(artistId: 0)
+        let sut = controller as! DetailViewController
 
-    XCTAssert(sut is DetailViewController)
-    XCTAssertNotNil((sut as! DetailViewController).router)
-    XCTAssertNotNil((sut as! DetailViewController).output)
-  }
+        XCTAssertNotNil(sut.dataHandler)
+        XCTAssertNotNil(sut.output)
+    }
+    
+    func testPresenterAssembly() {
+            let view = DetailAssembly.assemble(artistId: 0)
+            let presenter = (view as! DetailViewController).output
+            XCTAssert(presenter is DetailPresenter)
 
-  func testDetailAssemblyInitialization() {
-    let sut = DetailAssembly()
+            let sut = presenter as! DetailPresenter
 
-    XCTAssertNotNil(sut)
-  }
+            XCTAssertNotNil(sut.interactor)
+            XCTAssertNotNil(sut.router)
+            XCTAssertNotNil(sut.view)
+        }
+    
+    func testInteractorAssembly() {
+            let presenter = (DetailAssembly.assemble(artistId: 0) as! DetailViewController).output
+            let interactor = (presenter as! DetailPresenter).interactor
+            XCTAssert(interactor is DetailInteractor)
+
+            let sut = interactor as! DetailInteractor
+            XCTAssertNotNil(sut.output)
+        }
+    
+    func testRouterAssembly() {
+            let view = DetailAssembly.assemble(artistId: 0)
+            let presenter = (view as! DetailViewController).output
+            let router = (presenter as! DetailPresenter).router
+
+            XCTAssert(router is DetailRouter)
+
+        }
+
 }

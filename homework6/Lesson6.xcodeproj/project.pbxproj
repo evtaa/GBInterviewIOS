@@ -21,6 +21,23 @@
 		58CE26AE21D7683C00BCE908 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CE26AD21D7683C00BCE908 /* HeaderView.swift */; };
 		58CE26B021D76BAA00BCE908 /* DeatailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CE26AF21D76BAA00BCE908 /* DeatailTests.swift */; };
 		58CE26B221D76D9400BCE908 /* DetailPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CE26B121D76D9400BCE908 /* DetailPresenterTests.swift */; };
+		A82F9142273152A00015CA0C /* ModelStubFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82F9141273152A00015CA0C /* ModelStubFactory.swift */; };
+		A82F91482731530A0015CA0C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82F91472731530A0015CA0C /* Model.swift */; };
+		A82F914F273153380015CA0C /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82F914E273153380015CA0C /* Result.swift */; };
+		A82F9153273154050015CA0C /* ArtistService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82F9152273154050015CA0C /* ArtistService.swift */; };
+		A82F9157273154870015CA0C /* ArtistServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82F9156273154870015CA0C /* ArtistServiceImplementation.swift */; };
+		A82F915B273157AA0015CA0C /* ListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82F915A273157AA0015CA0C /* ListProtocols.swift */; };
+		A82F9165273158CD0015CA0C /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82F9164273158CD0015CA0C /* ListPresenter.swift */; };
+		A82F916C2731A0F50015CA0C /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82F916B2731A0F50015CA0C /* ListInteractor.swift */; };
+		A82F91732731A4DC0015CA0C /* ListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82F91722731A4DC0015CA0C /* ListRouter.swift */; };
+		A82F91792731A69A0015CA0C /* ListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82F91782731A69A0015CA0C /* ListAssembly.swift */; };
+		A82F91812731B0BF0015CA0C /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82F91802731B0BF0015CA0C /* ListViewModel.swift */; };
+		A82F91872731DA050015CA0C /* DetailViewDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82F91862731DA050015CA0C /* DetailViewDataHandler.swift */; };
+		A83F364827306F4C00CC8737 /* ListViewDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83F364727306F4C00CC8737 /* ListViewDataHandler.swift */; };
+		A874CA622732C54D00AEF25D /* ListAssemblyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A874CA612732C54D00AEF25D /* ListAssemblyTest.swift */; };
+		A874CA682732C9FC00AEF25D /* ListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A874CA672732C9FC00AEF25D /* ListPresenterTests.swift */; };
+		A874CA6E2732CC9200AEF25D /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = A874CA6D2732CC9200AEF25D /* List.swift */; };
+		A874CA742733056D00AEF25D /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A874CA732733056D00AEF25D /* Detail.swift */; };
 		B0CE1290242FA55A00211275 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CE267421D73D4400BCE908 /* AppDelegate.swift */; };
 		B0CE1291242FA65F00211275 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58CE267821D73D4400BCE908 /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -56,6 +73,23 @@
 		58CE26AD21D7683C00BCE908 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		58CE26AF21D76BAA00BCE908 /* DeatailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeatailTests.swift; sourceTree = "<group>"; };
 		58CE26B121D76D9400BCE908 /* DetailPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenterTests.swift; sourceTree = "<group>"; };
+		A82F9141273152A00015CA0C /* ModelStubFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelStubFactory.swift; sourceTree = "<group>"; };
+		A82F91472731530A0015CA0C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		A82F914E273153380015CA0C /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		A82F9152273154050015CA0C /* ArtistService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistService.swift; sourceTree = "<group>"; };
+		A82F9156273154870015CA0C /* ArtistServiceImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistServiceImplementation.swift; sourceTree = "<group>"; };
+		A82F915A273157AA0015CA0C /* ListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProtocols.swift; sourceTree = "<group>"; };
+		A82F9164273158CD0015CA0C /* ListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
+		A82F916B2731A0F50015CA0C /* ListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
+		A82F91722731A4DC0015CA0C /* ListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRouter.swift; sourceTree = "<group>"; };
+		A82F91782731A69A0015CA0C /* ListAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAssembly.swift; sourceTree = "<group>"; };
+		A82F91802731B0BF0015CA0C /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		A82F91862731DA050015CA0C /* DetailViewDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewDataHandler.swift; sourceTree = "<group>"; };
+		A83F364727306F4C00CC8737 /* ListViewDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewDataHandler.swift; sourceTree = "<group>"; };
+		A874CA612732C54D00AEF25D /* ListAssemblyTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAssemblyTest.swift; sourceTree = "<group>"; };
+		A874CA672732C9FC00AEF25D /* ListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenterTests.swift; sourceTree = "<group>"; };
+		A874CA6D2732CC9200AEF25D /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		A874CA732733056D00AEF25D /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +131,10 @@
 		58CE267321D73D4400BCE908 /* Lesson6 */ = {
 			isa = PBXGroup;
 			children = (
-				58CE267421D73D4400BCE908 /* AppDelegate.swift */,
+				A82F9132273150CF0015CA0C /* Application */,
+				A82F91362731513B0015CA0C /* Core */,
+				A82F91352731512F0015CA0C /* Common */,
+				A82F9133273150DB0015CA0C /* Modules */,
 				58CE269521D73F9000BCE908 /* Detail */,
 				58CE269421D73F9000BCE908 /* List */,
 				58CE269621D73FB700BCE908 /* Resources */,
@@ -110,6 +147,8 @@
 			children = (
 				58CE26AF21D76BAA00BCE908 /* DeatailTests.swift */,
 				58CE26B121D76D9400BCE908 /* DetailPresenterTests.swift */,
+				A874CA612732C54D00AEF25D /* ListAssemblyTest.swift */,
+				A874CA672732C9FC00AEF25D /* ListPresenterTests.swift */,
 				58CE268B21D73D4500BCE908 /* Info.plist */,
 			);
 			path = Lesson6Tests;
@@ -118,7 +157,12 @@
 		58CE269421D73F9000BCE908 /* List */ = {
 			isa = PBXGroup;
 			children = (
-				58CE267621D73D4400BCE908 /* ListViewController.swift */,
+				A82F915A273157AA0015CA0C /* ListProtocols.swift */,
+				A82F91782731A69A0015CA0C /* ListAssembly.swift */,
+				A82F915E2731585D0015CA0C /* View */,
+				A82F915F273158690015CA0C /* Presenter */,
+				A82F916A2731A0D60015CA0C /* Interactor */,
+				A82F91712731A4B40015CA0C /* Router */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -151,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				58CE26A121D752CE00BCE908 /* DetailViewController.swift */,
+				A82F91862731DA050015CA0C /* DetailViewDataHandler.swift */,
 				58CE26AB21D75C9A00BCE908 /* SongCell.swift */,
 				58CE26AD21D7683C00BCE908 /* HeaderView.swift */,
 			);
@@ -180,6 +225,116 @@
 				58CE26A721D752F000BCE908 /* DetailRouter.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		A82F9132273150CF0015CA0C /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				58CE267421D73D4400BCE908 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A82F9133273150DB0015CA0C /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		A82F91352731512F0015CA0C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A874CA6B2732CC3200AEF25D /* Moc */,
+				A82F914D273153280015CA0C /* Enums */,
+				A82F91402731527F0015CA0C /* Factory */,
+				A82F913F2731526D0015CA0C /* Structures */,
+				A82F913E273152550015CA0C /* ArtistService */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A82F91362731513B0015CA0C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A82F913E273152550015CA0C /* ArtistService */ = {
+			isa = PBXGroup;
+			children = (
+				A82F9152273154050015CA0C /* ArtistService.swift */,
+				A82F9156273154870015CA0C /* ArtistServiceImplementation.swift */,
+			);
+			path = ArtistService;
+			sourceTree = "<group>";
+		};
+		A82F913F2731526D0015CA0C /* Structures */ = {
+			isa = PBXGroup;
+			children = (
+				A82F91472731530A0015CA0C /* Model.swift */,
+			);
+			path = Structures;
+			sourceTree = "<group>";
+		};
+		A82F91402731527F0015CA0C /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				A82F9141273152A00015CA0C /* ModelStubFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		A82F914D273153280015CA0C /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				A82F914E273153380015CA0C /* Result.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		A82F915E2731585D0015CA0C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				58CE267621D73D4400BCE908 /* ListViewController.swift */,
+				A83F364727306F4C00CC8737 /* ListViewDataHandler.swift */,
+				A82F91802731B0BF0015CA0C /* ListViewModel.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A82F915F273158690015CA0C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A82F9164273158CD0015CA0C /* ListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A82F916A2731A0D60015CA0C /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A82F916B2731A0F50015CA0C /* ListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		A82F91712731A4B40015CA0C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				A82F91722731A4DC0015CA0C /* ListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		A874CA6B2732CC3200AEF25D /* Moc */ = {
+			isa = PBXGroup;
+			children = (
+				A874CA6D2732CC9200AEF25D /* List.swift */,
+				A874CA732733056D00AEF25D /* Detail.swift */,
+			);
+			path = Moc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,16 +439,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0CE1290242FA55A00211275 /* AppDelegate.swift in Sources */,
+				A82F9157273154870015CA0C /* ArtistServiceImplementation.swift in Sources */,
 				58CE267721D73D4400BCE908 /* ListViewController.swift in Sources */,
 				58CE26A821D752F000BCE908 /* DetailRouter.swift in Sources */,
+				A82F9142273152A00015CA0C /* ModelStubFactory.swift in Sources */,
 				58CE26A221D752CE00BCE908 /* DetailViewController.swift in Sources */,
 				58CE26AA21D7570300BCE908 /* DetailViewModel.swift in Sources */,
+				A82F9153273154050015CA0C /* ArtistService.swift in Sources */,
+				A82F914F273153380015CA0C /* Result.swift in Sources */,
+				A82F91792731A69A0015CA0C /* ListAssembly.swift in Sources */,
+				A82F9165273158CD0015CA0C /* ListPresenter.swift in Sources */,
+				A82F916C2731A0F50015CA0C /* ListInteractor.swift in Sources */,
+				A874CA742733056D00AEF25D /* Detail.swift in Sources */,
 				58CE269C21D751D300BCE908 /* DetailAssembly.swift in Sources */,
+				A82F91482731530A0015CA0C /* Model.swift in Sources */,
 				58CE26A621D752E600BCE908 /* DetailInteractor.swift in Sources */,
 				58CE26AE21D7683C00BCE908 /* HeaderView.swift in Sources */,
+				A82F91732731A4DC0015CA0C /* ListRouter.swift in Sources */,
+				A83F364827306F4C00CC8737 /* ListViewDataHandler.swift in Sources */,
 				58CE269A21D750FA00BCE908 /* DetailModule.swift in Sources */,
 				58CE26AC21D75C9A00BCE908 /* SongCell.swift in Sources */,
+				A82F91812731B0BF0015CA0C /* ListViewModel.swift in Sources */,
 				58CE26A421D752D900BCE908 /* DetailPresenter.swift in Sources */,
+				A874CA6E2732CC9200AEF25D /* List.swift in Sources */,
+				A82F91872731DA050015CA0C /* DetailViewDataHandler.swift in Sources */,
+				A82F915B273157AA0015CA0C /* ListProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +473,8 @@
 			files = (
 				58CE26B221D76D9400BCE908 /* DetailPresenterTests.swift in Sources */,
 				58CE26B021D76BAA00BCE908 /* DeatailTests.swift in Sources */,
+				A874CA682732C9FC00AEF25D /* ListPresenterTests.swift in Sources */,
+				A874CA622732C54D00AEF25D /* ListAssemblyTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

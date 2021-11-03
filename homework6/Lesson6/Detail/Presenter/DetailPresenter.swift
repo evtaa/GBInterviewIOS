@@ -1,11 +1,13 @@
 import Foundation
+import UIKit
 
-final class DetailPresenter {
-
-  weak var view: DetailViewInput?
-  var interactor: DetailInteractorInput?
-
-  private lazy var dateFormatter: DateFormatter = createDateFormatter()
+final class DetailPresenter: NSObject {
+    
+    weak var view: DetailViewInput?
+    var interactor: DetailInteractorInput?
+    var router: DetailRouterInput?
+    
+    private lazy var dateFormatter: DateFormatter = createDateFormatter()
 }
 
 extension DetailPresenter: DetailViewOutput {
@@ -19,9 +21,9 @@ extension DetailPresenter: DetailRouterOutput {}
 
 extension DetailPresenter: DetailInteractorOutput {
 
-  func presentDetails(for artist: Artist) {
+  func presentDetails(for artist: Model.Artist) {
     let viewModel = transform(model: artist)
-    view?.upadateDetails(viewModel)
+    view?.updateDetails(viewModel)
   }
 }
 
@@ -33,14 +35,14 @@ private extension DetailPresenter {
     return formatter
   }
 
-  func transform(model: Artist) -> DetailViewModel {
+  func transform(model: Model.Artist) -> DetailViewModel {
     return DetailViewModel(
       artistName: model.name,
       artistAlbums: model.albums.map { transform(album: $0) }
     )
   }
 
-  func transform(album: Artist.Album) -> DetailViewModel.Album {
+  func transform(album: Model.Artist.Album) -> DetailViewModel.Album {
     return DetailViewModel.Album(
       title: album.name.uppercased(),
       songList: album.songs.map { transform(song: $0) },
@@ -48,7 +50,7 @@ private extension DetailPresenter {
     )
   }
 
-  func transform(song: Artist.Song) -> DetailViewModel.Album.Song {
+  func transform(song: Model.Artist.Song) -> DetailViewModel.Album.Song {
 
     return DetailViewModel.Album.Song(
       name: song.name,
