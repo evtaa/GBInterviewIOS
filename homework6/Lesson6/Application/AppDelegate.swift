@@ -7,8 +7,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    let rootViewController = ListViewController()
-    let navigationController = UINavigationController(rootViewController: rootViewController)
+    let listViewController = ListAssembly.assemble()
+    let navigationController = UINavigationController(rootViewController: listViewController)
     window?.rootViewController = navigationController
     window?.makeKeyAndVisible()
     

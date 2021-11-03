@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 
 // MARK: - Module I/O
 
@@ -10,7 +11,7 @@ public protocol DetailModuleOutput {}
 
 protocol DetailViewInput: class {
 
-  func upadateDetails(_ details: DetailViewModel)
+  func updateDetails(_ details: DetailViewModel)
 }
 
 protocol DetailViewOutput {
@@ -25,7 +26,7 @@ protocol DetailInteractorInput {
 
 protocol DetailInteractorOutput: class {
 
-  func presentDetails(for artist: Artist)
+    func presentDetails(for artist: Model.Artist)
 }
 
 protocol DetailRouterInput {}

@@ -2,56 +2,49 @@ import XCTest
 @testable import Lesson6
 
 final class DetailPresenterTests: XCTestCase {
-
-  private var sut: DetailPresenter!
+    
+    var sut: DetailPresenter!
+    var view: DetailViewMock!
+    var interactor: DetailInteractorMock!
+    var router: DetailRouterMock!
 
   override func setUp() {
+    super.setUp()
+    
+    router = DetailRouterMock()
+    interactor = DetailInteractorMock()
+    view = DetailViewMock()
+    
     sut = DetailPresenter()
+    sut.router = router
+    sut.interactor = interactor
+    sut.view = view
   }
 
   override func tearDown() {
+    router = nil
+    interactor = nil
+    view = nil
     sut = nil
+    
+    super.tearDown()
   }
 
-  func testExample() {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+  func testViewIsReady() {
+    sut.viewIsReady()
+    guard case DetailInteractorMock.Invocations.obtainDetails = interactor.invocations.first! else {
+        XCTFail("expected .obtainDetails, got \(interactor.invocations.first!)")
+        return
+    }
   }
-
-  func testModelConsistency() {
-    let model = Artist(
-      identifier: 1111,
-      name: "A",
-      albums: [
-        Artist.Album(
-          name: "I",
-          songs: [
-            Artist.Song(name: "I", duration: 1),
-            Artist.Song(name: "C", duration: 2),
-            Artist.Song(name: "J", duration: 2),
-            Artist.Song(name: "I", duration: 2),
-            Artist.Song(name: "I", duration: 3),
-            Artist.Song(name: "G", duration: 1),
-            Artist.Song(name: "O", duration: 1),
-            Artist.Song(name: "H", duration: 3),
-            Artist.Song(name: "H", duration: 2),
-            Artist.Song(name: "O", duration: 2)
-          ],
-          date: Date(timeIntervalSince1970: 5)
-        )
-      ]
-    )
-
-    sut.presentDetails(for: model)
-
-    XCTAssertEqual(1, model.albums.count)
-    XCTAssertEqual(10, model.albums[0].songs.count)
-    XCTAssertEqual("A", model.name)
-    XCTAssertEqual("I", model.albums[0].name)
-    XCTAssertEqual(1111, model.identifier)
-  }
-
-  func testViewOutput() {
-    XCTAssert(sut is DetailViewOutput)
-  }
+    
+    func testPresentDetails() {
+        let artist = ModelStubFactory.detail()
+        sut.presentDetails(for: artist)
+        
+        guard case DetailViewMock.Invocations.updateDetails(details: _) = view.invocations.first! else {
+            XCTFail("excepted ")
+            return
+        }
+    }
 }
